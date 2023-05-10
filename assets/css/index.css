@@ -1,7 +1,6 @@
 small {
   font-size: 80%;
 }
-
 a:not([href]) {
   color: inherit;
   text-decoration: none;
@@ -277,12 +276,6 @@ small {
   .container-xl {
     max-width: 1140px;
   }
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 .no-gutters {
   margin-right: 0;
@@ -3603,53 +3596,6 @@ a.text-dark:hover {
     transform: rotate(359deg);
   }
 }
-
-:root {
-  --theme-color: #e40000;
-  --primary-color: #fb811e;
-  --primary-light: #fcf1e7;
-  --primary-dark: #ffc945;
-  --secondary-color: #009f4d;
-  --font-color: #707070;
-  --bg-color: #fff;
-  --heading-color: #060606;
-  --footer-color: #060e1f;
-  --footer-cpy-color: #040a17;
-  --border-radius: 30px;
-  --border-radius-full: 15px;
-  --border-color: transparent;
-  --border-color-light: #eee;
-  --iframe-filter: grayscale(0%);
-  --bg-grey: #f4f4f4;
-  --bg-light: #fafafa;
-  --bg-dark-color: #fff;
-  --quote-text-color: #1d2c4c;
-  --icon-gra-color: linear-gradient(75deg, #1c2e7b 10%, #e60264);
-  --shadow-color: rgb(0 0 0 / 3%);
-  --box-shadow: rgb(0 0 0 / 41%);
-}
-[data-theme="dark"] {
-  --theme-color: #e40000;
-  --primary-color: #fb811e;
-  --primary-light: #ffc945;
-  --secondary-color: #009f4d;
-  --primary-dark: #00070c;
-  --font-color: #b7b7b7;
-  --bg-color: #222222;
-  --heading-color: #fdfffc;
-  --footer-color: #0e0e0e;
-  --footer-cpy-color: #060606;
-  --border-color: rgba(255, 255, 255, 0.2);
-  --border-color-light: rgba(255, 255, 255, 0.2);
-  --iframe-filter: grayscale(100%);
-  --bg-grey: #0b0d0e;
-  --bg-light: #0c0b0b;
-  --bg-dark-color: #27282b;
-  --quote-text-color: #e6e6e6;
-  --icon-gra-color: #fff;
-  --shadow-color: rgb(23 19 19);
-  --box-shadow: rgb(13 7 7);
-}
 .noscroll {
   overflow: hidden;
   height: 100vh;
@@ -3693,14 +3639,6 @@ span {
   -webkit-appearance: none;
   outline: 0;
   font-family: "Source Sans Pro", sans-serif;
-}
-a,
-a:hover,
-button,
-button:hover {
-  text-decoration: none;
-  transition: 0.5s all;
-  -moz-transition: 0.5s all;
 }
 ul {
   margin: 0;
@@ -3877,29 +3815,6 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-#movetop {
-  position: fixed;
-  bottom: 90px;
-  right: 15px;
-  z-index: 9;
-  font-size: 16px;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  background: var(--secondary-color);
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  padding: 0;
-}
-#movetop:hover {
-  opacity: 0.8;
-}
 .inner-header {
   background: #fff;
 }
@@ -3947,27 +3862,6 @@ a.navbar-brand:hover {
   font-weight: 600;
   text-transform: uppercase;
 }
-header {
-  background-color: transparent;
-  padding: 0;
-  transition: all 0.4s ease 0s;
-  height: 90px;
-  display: grid;
-  align-items: center;
-}
-header.nav-fixed {
-  padding: 0;
-  border-bottom: none;
-  z-index: 99 !important;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 70px;
-}
-header.nav-fixed nav.navbar.navbar-expand-lg.stroke {
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-}
 .navbar-nav .nav-link.show,
 .navbar-nav .show > {
   color: #7c6a6a;
@@ -4008,61 +3902,6 @@ nav ul li a:hover {
 .cont-ser-position {
   margin-right: 38px !important;
   margin-top: 6px;
-}
-.navbar .search-right {
-  margin: 0 10px 0 10px;
-}
-.navbar form.search-box {
-  display: flex;
-  align-items: center;
-}
-.navbar form.search-box input {
-  font-size: 14px;
-  color: #000;
-  border: none;
-  padding: 10px 35px 10px 15px;
-  width: 100%;
-  border-radius: 30px;
-  border: 1px solid rgb(0 0 0 / 26%);
-  background: #fff;
-}
-.nav-fixed .navbar form.search-box input {
-  border: 2px solid #eee;
-  color: #333;
-}
-button.search-btn {
-  position: absolute;
-  color: var(--primary-color);
-  right: 0;
-  padding: 8px 12px 8px 2px;
-}
-button.search-btn:hover {
-  color: var(--heading-color);
-}
-input[type="search"] {
-  background: #fff url(../images/search.png) no-repeat 10px center;
-  border: solid 1px #eee;
-  padding: 0 17px;
-  width: 20px;
-  height: 35px;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-#demo-2 input[type="search"]:hover {
-  background-color: #fff;
-}
-#demo-2 input[type="search"]:focus {
-  width: 200px;
-  padding-left: 32px;
-  color: #000;
-  background-color: #fff;
-  cursor: auto;
-  padding-right: 15px;
 }
 .nav-fixed .search-right a {
   color: var(--heading-color);
@@ -4222,14 +4061,6 @@ button.search-btn {
     text-align: center;
     font-size: 15px;
   }
-  header {
-    height: auto;
-    padding: 17px 0;
-  }
-  header.nav-fixed {
-    height: auto;
-    padding: 14px 0;
-  }
   .navbar-expand-lg .navbar-nav .nav-link {
     display: block;
     color: var(--heading-color);
@@ -4320,68 +4151,6 @@ button.search-btn {
     margin-top: 1em;
   }
 }
-ul#menu {
-  position: absolute;
-  margin: 0;
-  color: #fff;
-  z-index: 99;
-  right: 0;
-  font-size: 29px;
-}
-ul#menu > li {
-  float: left;
-  list-style-type: none;
-  position: relative;
-  width: 100%;
-}
-ul#menu label {
-  position: relative;
-  display: block;
-  transition: background 0.3s;
-  cursor: pointer;
-  text-align: center;
-  margin: 0;
-}
-ul#menu label span {
-  line-height: 1em;
-}
-ul#menu input {
-  display: none;
-}
-ul#menu input:checked ~ ul.submenu {
-  max-height: 400px;
-  transition: max-height 0.5s ease-in;
-}
-ul.submenu {
-  max-height: 0;
-  padding: 0;
-  overflow: hidden;
-  list-style-type: none;
-  background: var(--bg-color);
-  transition: max-height 0.5s ease-out;
-  position: absolute;
-  min-width: 8em;
-  right: 0;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -moz-border-radius: 4px;
-  box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
-}
-ul.submenu li a {
-  display: block;
-  padding: 7px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--heading-color);
-}
-ul.submenu li a.active,
-ul.submenu li a:hover {
-  color: var(--primary-color);
-}
 .btn-style {
   font-size: 16px;
   line-height: 26px;
@@ -4407,16 +4176,6 @@ ul.submenu li a:hover {
   background: 0 0;
   color: var(--primary-color);
 }
-.title-style {
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 600;
-  color: var(--heading-color);
-}
-h5.small-title {
-  color: var(--primary-color);
-  font-size: 22px;
-}
 .title-style-main {
   z-index: 1;
 }
@@ -4437,30 +4196,6 @@ h4.title-bg-content {
 }
 @media all and (max-width: 1440px) {
   .title-style-2 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-@media all and (max-width: 991px) {
-  .title-style {
-    font-size: 35px;
-    line-height: 45px;
-  }
-  h5.small-title {
-    font-size: 20px;
-  }
-}
-@media all and (max-width: 768px) {
-  .title-style {
-    font-size: 32px;
-    line-height: 42px;
-  }
-  h5.small-title {
-    font-size: 18px;
-  }
-}
-@media all and (max-width: 568px) {
-  .title-style {
     font-size: 30px;
     line-height: 40px;
   }
@@ -5756,16 +5491,6 @@ h5.gall-text {
     margin-bottom: 1em;
   }
 }
-.inner-banner {
-  background: url(../images/inner-banner.png) no-repeat bottom;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  position: relative;
-  z-index: 0;
-}
 .contact-block input {
   width: 100%;
   color: var(--heading-color);
@@ -5809,24 +5534,7 @@ h5.gall-text {
 .w3l-index5 span.fa.fa-play {
   line-height: 55px;
 }
-.w3l-content-bg {
-  background: url(../images/bg2.jpg) no-repeat center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  position: relative;
-  z-index: 1;
-}
-.w3l-content-bg::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgb(8 8 8 / 44%);
-  z-index: -1;
-}
+
 .w3l-text-11 .text11-content h4 {
   font-size: 28px;
   line-height: 38px;
