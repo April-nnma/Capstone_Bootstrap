@@ -12,22 +12,16 @@
  type="image/x-icon"
 />
 </head>
-<!-- google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Volkhov:wght@400;700&display=swap"
 rel="stylesheet">
-
-<!-- font awsome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
 crossorigin="anonymous" referrerpolicy="no-referrer" />
- <!-- bootstrap -->
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- 
-<!-- main css -->
 <link rel="stylesheet" href="./assets/css/blog2.css">
 <link rel="stylesheet" href="./assets/css/all.css">
 <link rel="stylesheet" href="./assets/css/common.css">
@@ -49,8 +43,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                   ></label>
                   <ul class="submenu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="blog.html">Blog Post</a></li>
                     <li><a href="404.html">404 Page</a></li>
                     <li><a href="landing.html">Landing Page</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -278,15 +273,32 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
             </div>
     </div>
-    </section>
-
-    <!-- move top -->
-    <button class="movetop">
-        <span class="fa fa-level-up"></span>
-    </button>
+    </section> <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-level-up" aria-hidden="true"></span>
+      </button>
+      <script>
+        window.onscroll = function () {
+          scrollFunction();
+        };
+  
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+  
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
     </div>
-    <!-- main.js -->
-    <script src="../blog_page2/js/main.js"> </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

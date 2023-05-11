@@ -1066,90 +1066,73 @@ h4 {
     order: 3;
   }
 }
-
+/* footer */
 .footer {
   padding: 50px 0 50px 0;
 }
-
 .footer_infor {
   margin: auto;
   width: 75%;
 }
-
 .footer_content {
   display: flex;
 }
-
 .footer_content a {
   text-decoration: none;
   color: #8a7c79;
   transition: all 0.5s;
 }
-
 .footer_content a:hover {
   color: #fb811e;
 }
-
 .footer_content h3 {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 20px;
 }
-
 .footer_content h4 {
   margin-bottom: 25px;
 }
-
 .footer_content p {
   margin-bottom: 15px;
   color: #8a7c79;
 }
-
 .footer_item1 {
   width: 30%;
   margin-right: 40px;
 }
-
 .footer_item2 {
   width: 40%;
   margin-right: 40px;
 }
-
 .footer_item3 {
   width: 40%;
 }
-
 .footer_logo a {
   padding-top: 10px;
   position: relative;
   text-decoration: none;
 }
-
 .logo2 {
   font-size: 30px;
 }
-
 .footer_logo i {
   position: absolute;
   font-size: 18px;
   margin-left: -104px;
   margin-top: -6px;
 }
-
 .footer_logo a,
 .footer_logo i {
   color: #fb811e;
 }
-
 .footer_social {
   list-style: none;
   display: flex;
 }
-
 .footer_social li > a {
   font-size: 20px;
 }
-
 .email_footer input {
   border: none;
   background-color: #f4f4f4;
@@ -1160,7 +1143,6 @@ h4 {
   border: 1px solid white;
   border-radius: 30px 0px 0px 30px;
 }
-
 .email_footer button {
   background: #07a252;
   border: none;
@@ -1173,16 +1155,13 @@ h4 {
   border-radius: 0px 30px 30px 0px;
   transition: all 0.8s;
 }
-
 .email_footer button:hover {
   background-color: #33b271;
 }
-
 .email_footer {
   margin-top: 20px;
   display: flex;
 }
-
 .footer_social i {
   padding: 10px;
   font-size: 17px;
@@ -1196,7 +1175,6 @@ h4 {
   margin-right: 10px;
   transition: all 0.5s;
 }
-
 .footer_social i:hover {
   background-color: #fff5dc;
   color: #fb811e;

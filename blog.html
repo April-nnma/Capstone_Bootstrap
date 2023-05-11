@@ -172,12 +172,15 @@
                     </div>
                 </div>
                 <aside class="infor_right">
-                    <div class="right_input">
-                        <form action="">
-                            <input type="search" placeholder="Search ..." class="text2" size="24">
-                            <input type="submit" value="Search" class="button2">
+                    <section id="search-2" class="widget widget_search">
+                        <form role="search" method="get" class="search-form" action="https://wp.w3layouts.com/farmstead/">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search …" value name="s">
+                            </label>
+                            <input type="submit" class="search-submit" value="Search">
                         </form>
-                    </div>
+                    </section>
                     <div class="right_post">
                         <h2>Recent Posts</h2>
                         <ul>
@@ -309,14 +312,32 @@
             </div>
     </div>
     </section>
-
-    <!-- move top -->
-    <button class="movetop">
-        <span class="fa fa-level-up"></span>
-    </button>
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-level-up" aria-hidden="true"></span>
+      </button>
+      <script>
+        window.onscroll = function () {
+          scrollFunction();
+        };
+  
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+  
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
     </div>
-    <!-- main.js -->
-    <script src="../Blog/main.js"> </script>
+    <script src="./assets/js/bootstrap.min.js"> </script>
 </body>
 
 </html>
