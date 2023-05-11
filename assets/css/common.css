@@ -508,6 +508,10 @@ input[type="search"] {
 .breadcrumbs-custom-path a:hover {
   color: var(--primary-color);
 }
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
 /* footer */
 .row {
   display: flex;
@@ -882,6 +886,33 @@ button::-moz-focus-inner {
 }
 .fa-id-card:before {
   content: "";
+}
+.fa-headphones:before {
+  content: "";
+}
+.fa-chevron-right:before {
+  content: "";
+}
+.fa-globe:before {
+  content: "";
+}
+.fa-bars:before {
+  content: "";
+}
+.fa-google-plus:before {
+  content: "";
+}
+.fa-linkedin:before {
+  content: "";
+}
+.fa-level-up:before {
+  content: "";
+}
+.fa-paper-plane:before {
+  content: "";
+}
+.fa-envelope-open:before {
+  content: "";
 }
 :root {
   --theme-color: #e40000;

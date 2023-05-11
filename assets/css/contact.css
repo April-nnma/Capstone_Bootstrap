@@ -561,33 +561,7 @@ h6 {
     display: none;
   }
 }
-.fa-headphones:before {
-  content: "";
-}
-.fa-chevron-right:before {
-  content: "";
-}
-.fa-globe:before {
-  content: "";
-}
-.fa-bars:before {
-  content: "";
-}
-.fa-google-plus:before {
-  content: "";
-}
-.fa-linkedin:before {
-  content: "";
-}
-.fa-level-up:before {
-  content: "";
-}
-.fa-paper-plane:before {
-  content: "";
-}
-.fa-envelope-open:before {
-  content: "";
-}
+
 @media screen and (max-width: 800px) and (orientation: landscape),
   screen and (max-height: 300px) {
 }
